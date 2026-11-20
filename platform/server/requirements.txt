@@ -1,0 +1,6 @@
+fastapi>=0.110
+uvicorn>=0.29
+# tests and the end-to-end demo
+pytest>=8
+httpx>=0.27
+numpy>=1.24

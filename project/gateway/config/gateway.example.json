@@ -1,0 +1,24 @@
+{
+  "gateway_id": 8,
+  "db_path": "/var/lib/ffn/gateway.db",
+  "serial_port": "/dev/ttyS1",
+  "serial_baud": 115200,
+  "boxes": [
+    {"id": 1, "name": "box-1", "lat": 0.0, "lon": 0.0},
+    {"id": 2, "name": "box-2", "lat": 0.0, "lon": 0.0}
+  ],
+  "phone_numbers": ["+000000000000"],
+  "emails": [],
+  "dashboard_url": "http://127.0.0.1:3000",
+  "dashboard_token": "",
+  "api_host": "127.0.0.1",
+  "api_port": 8090,
+  "api_token": "change-me",
+  "models": {
+    "autoencoder": "",
+    "gas_classifier": ""
+  },
+  "drone": {"enabled": true, "connection": "", "base_lat": 0.0, "base_lon": 0.0, "missions_dir": "/var/lib/ffn/missions"},
+  "sim_wind_to_deg": 90.0,
+  "fusion": {"alpha": 0.05, "beta": 0.05}
+}

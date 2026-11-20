@@ -1,0 +1,9 @@
+[project]
+name = "box-camera"
+version = "0.1.0"
+description = "Reference of the box camera image-quality check and gateway protocol (parity with the C port)"
+requires-python = ">=3.9"
+dependencies = ["numpy"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

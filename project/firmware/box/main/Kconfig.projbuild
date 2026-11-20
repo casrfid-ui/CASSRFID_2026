@@ -1,0 +1,38 @@
+menu "Forest box"
+    config BOX_ID
+        int "Box id (1..7)"
+        default 1
+        range 1 7
+    config BOX_OTHER_ID
+        int "Id of the other box (0 = none)"
+        default 2
+        range 0 7
+    config BOX_UTC_OFFSET_MIN
+        int "Site UTC offset (minutes)"
+        default 60
+    config BOX_STATIC_LAT_E7
+        int "Surveyed latitude x 1e7 (0 = use the GPS only)"
+        default 0
+    config BOX_STATIC_LON_E7
+        int "Surveyed longitude x 1e7"
+        default 0
+    config BOX_LORA_FREQ_HZ
+        int "LoRa frequency (Hz). Authorised use in the target country: to check (spec open decision 3)"
+        default 433175000
+    config BOX_LORA_TX_DBM
+        int "LoRa TX power (dBm)"
+        default 14
+        range 2 17
+    config BOX_WIFI_SSID
+        string "Gateway Wi-Fi SSID (camera upload only)"
+        default "gateway"
+    config BOX_WIFI_PASS
+        string "Gateway Wi-Fi password"
+        default "changeme"
+    config BOX_GATEWAY_URL
+        string "Gateway vision service URL"
+        default "http://192.168.4.1:8080/v1/frame"
+    config BOX_SIM_SEED
+        int "Seed of the simulated wind and rain"
+        default 1
+endmenu

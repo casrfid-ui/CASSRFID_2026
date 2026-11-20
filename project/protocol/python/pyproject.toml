@@ -1,0 +1,7 @@
+[project]
+name = "ffp"
+version = "0.1.0"
+description = "16-byte LoRa frame codec of the forest-fire network (mirror of protocol/c)"
+requires-python = ">=3.10"
+[tool.setuptools.packages.find]
+include = ["ffp*"]

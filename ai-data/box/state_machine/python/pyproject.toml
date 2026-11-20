@@ -1,0 +1,13 @@
+[project]
+name = "box-state-machine"
+version = "0.1.0"
+description = "Box state machine: Normal, Suspicion, Fire; modes; camera wake; frames."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,12 @@
+[project]
+name = "gateway-vision"
+version = "0.1.0"
+description = "Gateway service: receives a JPEG from a box, classifies fire / smoke / background"
+requires-python = ">=3.9"
+dependencies = ["numpy", "pillow", "onnxruntime"]
+
+[project.optional-dependencies]
+test = ["pytest", "onnx"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

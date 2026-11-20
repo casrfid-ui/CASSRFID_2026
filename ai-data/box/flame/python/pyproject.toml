@@ -1,0 +1,13 @@
+[project]
+name = "box-flame"
+version = "0.1.0"
+description = "Box flame sensor processing: burst of digital reads to one yes / no per wake-up."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "../../state_machine/python/src"]

@@ -1,0 +1,15 @@
+[project]
+name = "fwi-forecast"
+version = "0.1.0"
+description = "Gateway FWI forecast for 1 to 3 days: weather ensemble pushed through the box's own FWI engine, with a gradient-boosting comparison."
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+train = ["scikit-learn>=1.3", "matplotlib>=3.8"]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# risk_gru is imported only for its Algerian data-set loader and season tables (evaluation code, not the run-time class)
+pythonpath = ["src", "../../common/python/src", "../../../box/fwi/python/src", "../../risk_gru/python/src"]

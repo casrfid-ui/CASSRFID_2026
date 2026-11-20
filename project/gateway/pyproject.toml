@@ -1,0 +1,17 @@
+[project]
+name = "ffn-gateway"
+version = "0.1.0"
+description = "Gateway application of the forest-fire network (SBC side): ingest, fusion, alert levels, dispatch, slow path"
+requires-python = ">=3.10"
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+serial = ["pyserial"]
+drone = ["pymavlink"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

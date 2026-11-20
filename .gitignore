@@ -1,0 +1,55 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# node
+node_modules/
+dist/
+.next/
+
+# firmware build
+build/
+.pio/
+
+# raw data sets (not versioned, see ai-data/data/README.md)
+ai-data/data/Dataset Smoke Detection/
+
+# esp-idf generated
+sdkconfig
+sdkconfig.old
+managed_components/
+dependencies.lock
+
+# not versioned data and weights (see ai-data/data/README.md)
+ai-data/data/fire detection/
+*.pt
+runs/
+
+# gateway runtime files
+*.db
+*.db-journal
+project/gateway/missions/
+project/gateway/config/gateway.json
+
+# scratch and archives
+_to_delete/
+*.tar.gz
+
+# editor / os
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

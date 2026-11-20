@@ -1,0 +1,21 @@
+menu "Forest gateway bridge"
+    config GW_ID
+        int "Gateway id (8..11)"
+        default 8
+        range 8 11
+    config GW_LORA_FREQ_HZ
+        int "LoRa frequency (Hz), same as the boxes"
+        default 433175000
+    config GW_LORA_TX_DBM
+        int "LoRa TX power (dBm)"
+        default 14
+    config GW_SPREADING_FACTOR
+        int "Spreading factor (7..12), same as the boxes"
+        default 9
+    config GW_EMERGENCY_NUMBERS
+        string "Emergency SMS numbers, international form, separated by ';' (the SBC can replace them)"
+        default ""
+    config GW_SIM_PIN
+        string "SIM PIN (empty = none)"
+        default ""
+endmenu

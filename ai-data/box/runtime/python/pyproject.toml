@@ -1,0 +1,13 @@
+[project]
+name = "box-runtime"
+version = "0.1.0"
+description = "Python reference of the box runtime: FWI hourly, gas chain, state machine in one call per wake-up."
+requires-python = ">=3.10"
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "../../fwi/python/src", "../../gas_chain/python/src", "../../state_machine/python/src", "../../flame/python/src"]

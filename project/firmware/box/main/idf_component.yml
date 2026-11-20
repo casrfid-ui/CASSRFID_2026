@@ -1,0 +1,4 @@
+dependencies:
+  espressif/esp32-camera: ">=2.0.0"
+  bme68x:
+    git: https://github.com/boschsensortec/BME68x_SensorAPI.git

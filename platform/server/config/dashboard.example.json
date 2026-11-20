@@ -1,0 +1,14 @@
+{
+  "host": "0.0.0.0",
+  "port": 3000,
+  "db_path": "dashboard.db",
+  "gateway_url": "http://127.0.0.1:8090",
+  "gateway_token": "change-me",
+  "poll_s": 5,
+  "ingest_token": "change-me-too",
+  "operator_token": "",
+  "site_name": "Forest site, demo bench",
+  "drone_base": {"lat": 36.79, "lon": 10.09},
+  "timezone": "Africa/Tunis",
+  "smtp": {"host": "", "port": 587, "user": "", "password": "", "sender": "ffn-dashboard@localhost", "starttls": true}
+}
